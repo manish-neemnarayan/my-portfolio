@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #e1a2b8, #9f2bc1);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #313837;
+  text-align: center;
+  margin: 2rem 0rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11rem;
+  background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 10%));
+  padding: 2rem;
+  margin: 3rem 0rem;
+}
+
+.image-container img {
+  width: 25rem;
+  border-radius: 10px;
+}
+
+.description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.description button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  display: block;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 10%));
+}
+
+.description button:hover {
+  transform: scale(1.2);
+}
+
+.description button a {
+  text-decoration: none;
+}
+
+.description h2 {
+  background: linear-gradient(to right, #000000, #250ad2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

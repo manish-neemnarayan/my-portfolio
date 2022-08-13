@@ -1,0 +1,236 @@
+/* 
+font-family: 'DynaPuff', cursive;
+font-family: 'Pacifico', cursive; 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #e1a2b8, #9f2bc1);
+}
+
+.logo img {
+  width: 10rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 71vh;
+  width: 71vw;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0000005c;
+}
+.container {
+  filter: blur(2px);
+  z-index: -1;
+  height: 71vh;
+  width: 71vw;
+  position: absolute;
+  background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 10%));
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(#ff48db, ff48db);
+  border-image: linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 50%),
+      rgb(255 255 255 / 0%),
+      rgb(255 72 219 / 0%),
+      rgb(255 72 219 / 50%)
+    )
+    1;
+  border-radius: 10px;
+}
+
+.right {
+  width: 210px;
+  height: 300px;
+}
+
+.left {
+  width: 55%;
+}
+
+.right img {
+  width: 100%;
+  border-top-left-radius: 36rem;
+  border-bottom-right-radius: 15rem;
+  border-top-right-radius: 44rem;
+  border-bottom-left-radius: 51rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  margin-top: 0rem;
+  margin-left: 4rem;
+  margin-bottom: 10rem;
+  width: 63%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  font-family: "DynaPuff", cursive;
+  color: #ae00a8;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li:hover::before {
+  width: 5rem;
+}
+
+.navbar ul li::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: 0rem;
+  width: 1rem;
+  height: 1px;
+  border: 2px solid #000;
+  border-image: linear-gradient(
+      to bottom,
+      rgb(135 255 200),
+      rgb(255 255 255 / 13%),
+      rgb(255 72 219 / 16%),
+      rgb(65 0 221 / 50%)
+    )
+    1;
+  transition: all 1s ease-in-out;
+}
+
+.heading-container {
+  font-family: "Pacifico", cursive;
+  width: 68%;
+  margin-top: -5rem;
+  margin-left: 4rem;
+}
+
+.heading-container h1 {
+  position: absolute;
+  top: -8rem;
+  right: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, #272627, #ff6904, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: all 2s ease-in-out;
+  /* animation: cssAnimation 0s ease-in 5s forwards; */
+
+  transition-property: display;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  display: none;
+}
+
+.heading-container h1:active {
+  opacity: 0.4;
+}
+
+.heading-container .bottom {
+  margin-left: 11rem;
+  width: 65%;
+}
+
+.heading-container h2 {
+  color: gray;
+  font-weight: 300;
+}
+
+.heading-container h2 span {
+  color: gray;
+  margin-right: 1rem;
+  position: relative;
+  color: #1e1b1beb;
+}
+
+.heading-container h2 span::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: -1rem;
+  width: 5rem;
+  height: 1px;
+  border: 2px solid #000;
+  border-image: linear-gradient(
+      to bottom,
+      rgb(135 255 200),
+      rgb(255 255 255 / 13%),
+      rgb(255 72 219 / 16%),
+      rgb(65 0 221 / 50%)
+    )
+    1;
+}
+
+.about span {
+  display: block;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+
+.heading-container h3 {
+  width: 40%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.heading-container h3 span {
+  display: block;
+  border: 2px dotted #fff;
+  text-align: center;
+  margin-left: 3rem;
+  padding: 0.4rem;
+}
+
+.heading-container h3 .skill {
+  position: absolute;
+  top: -0.72rem;
+  left: -17rem;
+  padding: 1rem;
+}
+
+.links {
+  position: absolute;
+  top: 7rem;
+  right: 13rem;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+/* animation */
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    display: hidden;
+  }
+}
