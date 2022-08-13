@@ -304,8 +304,8 @@ footer {
   }
 
   .links {
-    right: 3rem;
-    top: 8rem;
-    flex-direction: row;
+    right: 2rem;
+    top: 11rem;
+    flex-direction: column;
   }
 }
