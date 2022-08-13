@@ -225,6 +225,15 @@ header {
   gap: 2rem;
   font-size: 2rem;
 }
+footer {
+  text-align: center;
+  color: rgba(28, 26, 26, 0.891);
+  position: absolute;
+  bottom: -17rem;
+  transform: rotate(90deg);
+  left: -4rem;
+  font-size: 12px;
+}
 
 /* animation */
 @keyframes cssAnimation {
@@ -232,5 +241,71 @@ header {
     width: 0;
     height: 0;
     display: hidden;
+  }
+}
+
+/* media queries */
+
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+    gap: 0rem;
+    margin-left: 2rem;
+  }
+  .right img {
+    width: 172px;
+    height: 197px;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 30rem;
+  }
+
+  .navbar {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .navbar ul {
+    gap: 3rem;
+  }
+
+  .heading-container {
+    margin-left: 2rem;
+  }
+
+  .heading-container h3 {
+    flex-direction: column;
+    /* margin-left: 2rem; */
+    margin-bottom: 4rem;
+  }
+
+  .heading-container h3 .skill {
+    top: 4.28rem;
+    left: -9rem;
+    padding: 1rem;
+  }
+
+  .heading-container h3 span {
+    margin-left: 3rem;
+    width: 7.2rem;
+    padding: 0.4rem;
+  }
+
+  .right {
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    right: 3rem;
+    top: 8rem;
+    flex-direction: row;
   }
 }

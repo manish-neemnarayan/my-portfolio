@@ -58,3 +58,15 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+/* media queries */
+@media screen and (max-width: 400px) {
+  .card {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image-container img {
+    width: 19rem;
+  }
+}
