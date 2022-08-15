@@ -113,7 +113,7 @@ header {
       rgb(65 0 221 / 50%)
     )
     1;
-  transition: all 0s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .heading-container {
@@ -275,6 +275,10 @@ footer {
 
   .navbar ul {
     gap: 3rem;
+  }
+
+  .navbar ul li::before {
+    transition: all 0.1s ease-in-out;
   }
 
   .heading-container {
