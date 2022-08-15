@@ -59,6 +59,14 @@ h1 {
   -webkit-background-clip: text;
 }
 
+.responsive {
+  display: block;
+  box-sizing: 0 0 5px black;
+  box-shadow: 0 0 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
 /* media queries */
 @media screen and (max-width: 400px) {
   .card {
