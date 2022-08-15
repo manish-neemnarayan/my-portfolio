@@ -113,7 +113,7 @@ header {
       rgb(65 0 221 / 50%)
     )
     1;
-  transition: all 1s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 
 .heading-container {
